@@ -7,9 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import com.example.DreamHouse2.model.Garden;
 import com.example.DreamHouse2.model.House;
-import com.example.DreamHouse2.model.Roof;
 
 @Controller
 public class HomeController {
@@ -24,8 +22,8 @@ public class HomeController {
 		return "question";
 	}
 
-	@PostMapping("/add")
-	public String add(@Validated @ModelAttribute Roof roof,House house,Garden garden,BindingResult result){
+	@PostMapping("/question")
+	public String add(@Validated @ModelAttribute House house,BindingResult result){
 		if(result.hasErrors()){
 			return "redirect:/";
 		}

@@ -11,5 +11,13 @@ import lombok.Setter;
 public class House {
 	@NotBlank
 	@Size(max = 10)
+	private String roofQ;
+
+	@NotBlank
+	@Size(max = 10)
 	private String houseQ;
+
+	@NotBlank
+	@Size(max = 10)
+	private String gardenQ;
 }
