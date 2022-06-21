@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+html {
+    width: 100%;
+    height: auto;
+}
+body {
+    margin: 0;
+}
+body .home{
+    height: 100vh;
+    box-sizing: border-box;
+    background-image: url(../images/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+}
+.home a img{
+    position: relative;
+    height: 130px;
+    margin: 200px auto auto 380px;
+    background: rgba(255, 255, 255, .5);
+    border-radius: 5px;
+    padding: 0;
+    align-items: center;
+}
+.home a img:hover {
+    transform: scale(1.01);
+    transition: .1s;
+}
+.home p {
+    position: relative;
+    margin: 20px auto auto 380px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* selection.html */
+
+.formContents,.selectionTitle {
+    margin-top: 82px;
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+label {
+    display: flex;
+}
+.roofSelect,.houseSelect,.gardenSelect{
+    display: flex;
+}
